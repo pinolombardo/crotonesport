@@ -1,0 +1,18 @@
+<style>
+    .tabbar::after {
+      content: none;
+    }
+  </style>
+
+<ion-tabs #ionTabs [scrollable-tabs]="ionTabs" [opts]="scrollableTabsopts" selectedIndex='0' color="{{tabsColor}}" mode='{{tabsMode}}'	tabsHighlight="true" tabsPlacement="{{tabsPlacement}}" >
+
+  <ion-tab [root]="tab1Root" [show]='tabToShow[0]' tabIcon="home" ></ion-tab>
+  <ion-tab [root]="tab2Root" [show]='tabToShow[1]' tabTitle="Crotone" ></ion-tab>
+  <ion-tab [root]="tab3Root" [show]='tabToShow[2]' tabTitle="Eccellenza" ></ion-tab>
+  <ion-tab [root]="tab4Root" [show]='tabToShow[3]' tabTitle="Promozione" ></ion-tab>
+  <ion-tab [root]="tab5Root" [show]='tabToShow[4]' tabTitle="1^Categoria" ></ion-tab>
+  <ion-tab [root]="tab6Root" [show]='tabToShow[5]' tabTitle="2^Categoria" ></ion-tab>
+  <ion-tab [root]="tab7Root" [show]='tabToShow[6]' tabTitle="3^Categoria" ></ion-tab>
+  
+</ion-tabs>
+
